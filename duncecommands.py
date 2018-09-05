@@ -13,10 +13,24 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    if message.content == "anna":
+    if message.content.lower() == "anna":
         await client.send_message(message.channel, ":bear:")
-    if message.content == "kearro":
+    if message.content.lower() == "kearro":
         await client.send_message(message.channel, ":frog:")
-        
+    if message.content.lower() == ".meep":
+        await client.send_message(message.channel, "moop")
+    if message.content.lower() == ".moop":
+        await client.send_message(message.channel, "meep")
+    if message.content.lower() == ".meepmoop":
+        await client.send_message(message.channel, "meepmoop")
+
+#@client.command()
+#async def meep():
+    #await client.say('moop')
+    
+#@client.command()
+#async def moop():
+    #await client.say('meep')
+#play around with client.command() cuz does not work for some reason
 client.run("NDg2ODE4NDE5NDY3ODc4NDAw.DnEqDw.65EWa3bYcbXq2iFJJRAQbn_SAXM")
 
