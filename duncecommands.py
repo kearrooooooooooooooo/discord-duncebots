@@ -3,6 +3,7 @@ from discord.ext.commands import Bot
 from discord.ext import commands
 import asyncio
 import time
+import token
 
 Client = discord.Client()
 client = commands.Bot(command_prefix = ".")
@@ -32,5 +33,5 @@ async def on_message(message):
 #async def moop():
     #await client.say('meep')
 #play around with client.command() cuz does not work for some reason
-client.run("NDg2ODE4NDE5NDY3ODc4NDAw.DnEqDw.65EWa3bYcbXq2iFJJRAQbn_SAXM")
+token()
 
