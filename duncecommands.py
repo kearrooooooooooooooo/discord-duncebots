@@ -13,9 +13,9 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    if message.content == "anna"():
+    if message.content == "anna":
         await client.send_message(message.channel, ":bear:")
-    if message.content == "kearro"():
+    if message.content == "kearro":
         await client.send_message(message.channel, ":frog:")
         
 client.run("NDg2ODE4NDE5NDY3ODc4NDAw.DnEqDw.65EWa3bYcbXq2iFJJRAQbn_SAXM")
