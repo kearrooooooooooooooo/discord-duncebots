@@ -33,4 +33,4 @@ async def on_message(message):
 #async def moop():
     #await client.say('meep')
 #play around with client.command() cuz does not work for some reason
-duncerun()
+client.run(duncerun())
