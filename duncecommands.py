@@ -24,10 +24,14 @@ async def on_message(message):
         await client.send_message(message.channel, "meep")
     if message.content.lower() == ".meepmoop":
         await client.send_message(message.channel, "meepmoop")
+    if message.content.lower() == ".wakeup":
+        await client.send_message(message.channel, "get up u lazy fuk")
+    if message.content.lower() == ".gosleep":
+        await client.send_message(message.channel, "go sleep fool")
 
 #@client.command()
-#async def meep():
-    #await client.say('moop')
+#async def ping():
+    #await client.say('pong')
     
 #@client.command()
 #async def moop():
