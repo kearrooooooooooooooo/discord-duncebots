@@ -32,6 +32,8 @@ async def on_message(message):
         await client.send_message(message.channel, "begone children")
     if message.content.lower() == "andy":
         await client.send_message(message.channel, "DUNCEDADDY")
+    if message.content.lower() == "im the ninja":
+        await client.send_message(message.channel, "WOOHOO!")
 
 #@client.command()
 #async def ping():
